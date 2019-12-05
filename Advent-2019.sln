@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2019-3", "Advent-201
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2019-4", "Advent-2019-4\Advent-2019-4.vcxproj", "{15C27A3D-CD9F-4727-B146-4A12DC745ECD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2019-5", "Advent-2019-5\Advent-2019-5.vcxproj", "{55BBADB4-6D17-4931-9F17-012121D44E04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{15C27A3D-CD9F-4727-B146-4A12DC745ECD}.Release|x64.Build.0 = Release|x64
 		{15C27A3D-CD9F-4727-B146-4A12DC745ECD}.Release|x86.ActiveCfg = Release|Win32
 		{15C27A3D-CD9F-4727-B146-4A12DC745ECD}.Release|x86.Build.0 = Release|Win32
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Debug|x64.ActiveCfg = Debug|x64
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Debug|x64.Build.0 = Debug|x64
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Debug|x86.ActiveCfg = Debug|Win32
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Debug|x86.Build.0 = Debug|Win32
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Release|x64.ActiveCfg = Release|x64
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Release|x64.Build.0 = Release|x64
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Release|x86.ActiveCfg = Release|Win32
+		{55BBADB4-6D17-4931-9F17-012121D44E04}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
