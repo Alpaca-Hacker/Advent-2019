@@ -5,7 +5,7 @@
 
 int runCode(int Input[]);
 
-void getArg(int  Instruction[5], int& Arg1, int& Arg2, int& Arg3, int* Input, int Ip);
+void getArg(int  instruction[5], int& Arg1, int& Arg2, int& Arg3, int* Input, int Ip);
 
 int main()
 {
@@ -127,27 +127,27 @@ int runCode(int Input[])
 	return Input[0];
 }
 
-void getArg(int  Instruction[5], int& Arg1, int& Arg2, int& Arg3, int* Input, int Ip)
+void getArg(int  instruction[5], int& Arg1, int& Arg2, int& Arg3, int* Input, int Ip)
 {
-	if (Instruction[2] == 0) {
+	if (instruction[2] == 0) {
 		Arg1 = Input[Input[Ip + 1]];
 	}
-	if (Instruction[2] == 1) {
+	if (instruction[2] == 1) {
 		Arg1 = Input[Ip + 1];
 	}
 
-	if (Instruction[1] == 0) {
+	if (instruction[1] == 0) {
 		Arg2 = Input[Input[Ip + 2]];
 	}
-	if (Instruction[1] == 1) {
+	if (instruction[1] == 1) {
 		Arg2 = Input[Ip + 2];
 	}
 
 	if (Ip + 3 < sizeof(Input) / sizeof(Input[0])) {
-		if (Instruction[0] == 0) {
+		if (instruction[0] == 0) {
 			Arg3 = Input[Input[Ip + 3]];
 		}
-		if (Instruction[0] == 1) {
+		if (instruction[0] == 1) {
 			Arg2 = Input[Ip + 3];
 		}
 	}

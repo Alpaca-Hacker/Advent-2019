@@ -20,21 +20,33 @@ void splitString(const std::string& str, Container& cont, char delim = ' ')
 	}
 }
 
+int get_orbits(const std::string& planet, std::map<std::string, std::vector<std::string>>& Dict);
+
 int main()
 {
 	std::string Orbits[11]{ "COM)B","B)C","C)D","D)E","E)F","B)G","G)H","D)I","E)J","J)K","K)L" };
-	std::map < std::string, std::string[10] > Dict = {};
+	std::map <std::string, std::vector<std::string>> Dict = {};
 
-	for (int i =0; i < 11; i++)
+	for (const auto& Orbit : Orbits)
 	{
 		std::vector<std::string> planets;
-		splitString(Orbits[i], planets, ')');
+		splitString(Orbit, planets, ')');
 
-		if (Dict[planets[0]]) {
-			
-		}
-
-		std::cout << planets[0]<< "-" << planets[1] << std::endl;
+		Dict[planets[0]].push_back(planets[1]);
 	}
 
+	std::cout << "The number of orbits is " << get_orbits("COM", Dict);
+	return 0;
 }
+
+int get_orbits(const std::string& planet, std::map<std::string, std::vector<std::string>>&Dict)
+{
+	int steps = 0;
+	for (int i = 0; i < Dict[planet].size(); i++)
+	{
+		steps += get_orbits(Dict[planet][i], Dict);
+	}
+
+	return Dict[planet].size() +steps;
+}
+
