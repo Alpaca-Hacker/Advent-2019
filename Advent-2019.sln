@@ -17,7 +17,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2019-6", "Advent-201
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2019-7", "Advent-2019-7\Advent-2019-7.vcxproj", "{BB158C12-BD4E-4FDC-BBC6-9A7B1B1EF62E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2919-8", "Advent-2919-8\Advent-2919-8.vcxproj", "{83EA57BD-CED6-431D-AC65-762FC6DEA486}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advent-2019-8", "Advent-2919-8\Advent-2919-8.vcxproj", "{83EA57BD-CED6-431D-AC65-762FC6DEA486}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

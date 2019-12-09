@@ -152,7 +152,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Advent-2919-8.cpp" />
+    <ClCompile Include="Advent-2019-8.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input.txt" />

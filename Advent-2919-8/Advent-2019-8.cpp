@@ -1,4 +1,4 @@
-// Advent-2919-8.cpp 
+﻿// Advent-2919-8.cpp 
 //
 
 #include <iostream>
@@ -52,12 +52,26 @@ int main()
 		count1.push_back(layerCount[1]);
 		count2.push_back(layerCount[2]);
 	}
-
-	for (int i = 0; i < 100; ++i)
+	for (int line = 0; line < 6; line++)
 	{
-		std::cout << count0[i] << "-" << count1[i] * count2[i] << std::endl;
+		for (int col = 0; col < 25; col++)
+		{
+			for (int i = 0; i < 100; ++i)
+			{
+				if (Layers[i][(25 * line) + col] == '0')
+				{
+					std::cout << " ";
+					break;
+				}
+				if (Layers[i][(25 * line) + col] == '1')
+				{
+					std::cout << (char)178u;
+					break;
+				}
+			}
+		}
+		std::cout << std::endl;
 	}
-	
 	return 0;
 
 
